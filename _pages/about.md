@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Broadcast Research Analyst @ Sportradar. New York, NY
 
 profile:
   align: right
