@@ -46,8 +46,10 @@ linkedin_username: https://www.linkedin.com/in/ward-walton/
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
 Substack: # can be any name here other than the ones already defined above
+  logo: https://substack.com/img/substack.png
   title: Substack
   url: https://wardwalton.substack.com/
 Tiktok: # can be any name here other than the ones already defined above
+  logo: https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png
   title: TikTok
   url: https://www.tiktok.com/@wardwalton1
