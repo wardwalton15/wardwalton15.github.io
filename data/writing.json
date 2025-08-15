@@ -1,1 +1,14 @@
-
+[
+  {
+    "title": "Writing Example 1",
+    "description": "Here's the description of writing example 1.",
+    "thumb": "images/writing1-thumb.jpg",
+    "link": "writing1.html"
+  },
+  {
+    "title": "Writing Example 2",
+    "description": "Here's the description of writing example 2.",
+    "thumb": "images/writing2-thumb.jpg",
+    "link": "writing2.html"
+  }
+]

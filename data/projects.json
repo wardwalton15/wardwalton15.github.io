@@ -1,1 +1,15 @@
+[
+  {
+    "title": "Project Example 1",
+    "description": "Here's the description of project example 1.",
+    "thumb": "images/writing1-thumb.jpg",
+    "link": "writing1.html"
+  },
+  {
+    "title": "Project Example 2",
+    "description": "Here's the description of project example 2.",
+    "thumb": "images/writing2-thumb.jpg",
+    "link": "writing2.html"
+  }
+]
 
