@@ -1,7 +1,7 @@
 [
   {
     "title": "NBA MVP Predictor",
-    "description": "A macchine learning approach to predict the NBA's most prestigious individual award.",
+    "description": "A machine learning approach to predict the NBA's most prestigious individual award.",
     "thumb": "images/project1-thumb.jpg",
     "link": "project1.html"
   },
