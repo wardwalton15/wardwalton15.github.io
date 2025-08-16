@@ -1,12 +1,12 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f8f9fa;
+  background: #82b5e9;
   color: #333;
 }
 
 header {
-  background: white;
+  background: #58a6f5;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   padding: 1rem;
   position: sticky;
@@ -26,7 +26,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #007BFF;
+  color: white;
 }
 
 main {
