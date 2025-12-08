@@ -8,99 +8,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    /* Resetting default margins for a clean slate */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      /* Step 1: Apply the font and improve text color */
-      font-family: 'Inter', sans-serif;
-      background-color: #F6FEF9; /* Side background */
-      color: #062E1D; /* Text color */
-      line-height: 1.6;
-    }
-
-    /* Step 2: The Main Container */
-    .container {
-      max-width: 800px;
-      margin: 0 auto; /* Centers the container */
-      padding: 0 20px 40px 20px;
-      background-color: #FFFFFA;
-      min-height: calc(100vh - 60px);
-    }
-
-    /* Navigation Styling */
-    main {
-      padding: 40px 20px;
-    }
-
-    /* Layout adjustments */
-    .about-container {
-      display: flex;
-      align-items: center; /* Center vertically */
-      gap: 40px;
-      flex-direction: row-reverse; /* Puts photo on right, text on left usually looks better for intros */
-      flex-wrap: wrap-reverse; /* Handles mobile stacking correctly */
-    }
-
-    .about-text {
-      flex: 1;
-      min-width: 280px;
-    }
-
-    .about-photo {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    /* Typography hierarchy */
-    h1 {
-      font-size: 2.5rem;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.5rem;
-      color: #062E1D;
-    }
-
-    .subtitle {
-      font-size: 1.1rem;
-      color: #062E1D;
-      margin-bottom: 1.5rem;
-      font-weight: 400;
-    }
-
-    .info-group {
-      margin-bottom: 0.8rem;
-    }
-
-    /* Highlight labels */
-    .label {
-      font-weight: 700;
-      color: #062E1D;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-right: 5px;
-    }
-  </style>
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <nav>
-      <a href="index.html">About</a>
-      <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
-      <a href="writing.html">Writing</a>
-    </nav>
+    <div class="header-content">
+      <nav>
+        <a href="index.html" class="active">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="writing.html">Writing</a>
+      </nav>
+    </div>
   </header>
 
   <div class="container">
@@ -133,7 +54,7 @@
             Python, SQL, R
           </div>
           
-          <p style="margin-top: 1.5rem; color: #062E1D;">
+          <p style="margin-top: 1.5rem;">
             Passionate about telling stories with data and learning new things.
           </p>
         </div>
