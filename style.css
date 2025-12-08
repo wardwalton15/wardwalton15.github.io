@@ -12,10 +12,12 @@ body {
 }
 
 header {
-  background-color: #FFFFFA;
-  margin-bottom: 3rem;
-  border-bottom: 1px solid #eaeaea;
-  padding: 2rem 20px;
+  background-color: #059669;
+  padding: 1rem 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 nav {
@@ -28,14 +30,14 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #062E1D;
+  color: #FFFFFA;
   font-weight: 600;
   font-size: 0.95rem;
   transition: color 0.2s ease;
 }
 
 nav a:hover {
-  color: #059669;
+  color: #F6FEF9;
 }
 
 main {

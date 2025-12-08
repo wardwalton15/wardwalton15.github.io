@@ -33,30 +33,38 @@
       background-color: #FFFFFA;
       min-height: 100vh;
       box-shadow: 0 0 20px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+      margin-top: 2rem;
     }
 
     /* Navigation Styling */
     header {
-      margin-bottom: 3rem;
-      border-bottom: 1px solid #eaeaea;
-      padding-bottom: 1rem;
+      background-color: #059669;
+      padding: 1rem 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 0;
     }
 
     nav {
       display: flex;
       gap: 25px;
+      justify-content: center;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     nav a {
       text-decoration: none;
-      color: #062E1D;
+      color: #FFFFFA;
       font-weight: 600;
       font-size: 0.95rem;
       transition: color 0.2s ease;
     }
 
     nav a:hover {
-      color: #059669; /* Accent color */
+      color: #F6FEF9;
     }
 
     /* Layout adjustments */
@@ -117,7 +125,8 @@
   <div class="container">
     <header>
       <nav>
-        <a href="index.html" style="color: #059669;">About</a> <a href="resume.html">Resume</a>
+        <a href="index.html">About</a>
+        <a href="resume.html">Resume</a>
         <a href="projects.html">Projects</a>
         <a href="writing.html">Writing</a>
       </nav>
@@ -149,7 +158,7 @@
 
           <div class="info-group" style="margin-top: 20px;">
             <span class="label">Tech Stack:</span> 
-            SQL, Python, R, Excel
+            Python, SQL, R
           </div>
           
           <p style="margin-top: 1.5rem; color: #062E1D;">
