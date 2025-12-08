@@ -29,42 +29,14 @@
     .container {
       max-width: 800px;
       margin: 0 auto; /* Centers the container */
-      padding: 40px 20px;
+      padding: 0 20px 40px 20px;
       background-color: #FFFFFA;
-      min-height: 100vh;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05); /* Subtle shadow for depth */
-      margin-top: 2rem;
+      min-height: calc(100vh - 60px);
     }
 
     /* Navigation Styling */
-    header {
-      background-color: #059669;
-      padding: 1rem 20px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      margin-bottom: 0;
-    }
-
-    nav {
-      display: flex;
-      gap: 25px;
-      justify-content: center;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #FFFFFA;
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: color 0.2s ease;
-    }
-
-    nav a:hover {
-      color: #F6FEF9;
+    main {
+      padding: 40px 20px;
     }
 
     /* Layout adjustments */
@@ -122,16 +94,16 @@
 </head>
 <body>
 
-  <div class="container">
-    <header>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="resume.html">Resume</a>
-        <a href="projects.html">Projects</a>
-        <a href="writing.html">Writing</a>
-      </nav>
-    </header>
+  <header>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="writing.html">Writing</a>
+    </nav>
+  </header>
 
+  <div class="container">
     <main>
       <div class="about-container">
         
