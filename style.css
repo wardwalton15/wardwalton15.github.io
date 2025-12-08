@@ -191,3 +191,102 @@ nav a:hover, nav a.active {
   font-weight: 600;
   font-size: 0.9rem;
 }
+
+/* style.css - RESUME PAGE STYLES */
+
+/* --- Resume Header & Links --- */
+.resume-header-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.resume-header-links h1 {
+  /* Overrides main h1 to be slightly smaller and match section title style */
+  font-size: 1.8rem; 
+  margin: 0;
+  color: var(--text-color);
+}
+
+.download-link {
+  color: var(--accent-color) !important; 
+  font-weight: 600; 
+  text-decoration: none;
+}
+
+.download-link i {
+  margin-right: 5px;
+}
+
+
+/* --- Section Styling --- */
+.resume-section {
+  margin-bottom: 45px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed var(--border-color); /* Subtle divider */
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent-color); /* Use the green accent color */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 15px;
+}
+
+/* --- Job Entry Styling --- */
+.job-entry {
+  margin-bottom: 30px;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.job-entry h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.job-details {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.job-date {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #777;
+}
+
+/* Bullet Point List */
+.job-entry ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.job-entry li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* --- Skills List Styling --- */
+.skill-list p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.skill-category {
+  font-weight: 600;
+  color: var(--text-color);
+  margin-right: 5px;
+}

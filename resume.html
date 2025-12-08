@@ -24,30 +24,78 @@
 
   <div class="container">
     <main>
-      <h1>Resume</h1>
-      <p>
-        Download the PDF: 
-        <a href="resume.pdf" target="_blank" style="color: #059669; font-weight: 600;">Download</a>
-      </p>
-      <iframe src="resume.pdf" class="resume-viewer"></iframe>
-      <p style="margin-top: 1.5rem;">
-        <a href="https://www.linkedin.com/in/ward-walton/" target="_blank" style="color: #059669; font-weight: 600; text-decoration: none;">
-          <i class="fab fa-linkedin"></i> Connect on LinkedIn
-        </a>
-      </p>
+      <div class="resume-header-links">
+        <h1>Experience & Education</h1>
+        <p>
+          <a href="resume.pdf" target="_blank" class="download-link">
+            <i class="fas fa-file-pdf"></i> Download PDF
+          </a> 
+          &nbsp;&nbsp;&bull;&nbsp;&nbsp; 
+          <a href="https://www.linkedin.com/in/ward-walton/" target="_blank" class="download-link">
+            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+          </a>
+        </p>
+      </div>
+      
+      <section class="resume-section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skill-list">
+          <p>
+            <span class="skill-category">Languages & Tools:</span> Python (Pandas, Scikit-learn, Matplotlib), R (Tidyverse), SQL, Excel, Git, Tableau, PowerBI.
+          </p>
+          <p>
+            <span class="skill-category">Methods:</span> Statistical Modeling, Data Visualization, ETL/Data Wrangling, Regression Analysis.
+          </p>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="job-entry">
+          <div class="job-header">
+            <h3>Broadcast Research Analyst</h3>
+            <span class="job-date">September 2023 – Present</span>
+          </div>
+          <p class="job-details">Sportradar | Remote</p>
+          <ul>
+            <li>Conduct player and team performance analysis across major U.S. sports to support high-profile broadcasts (NFL Playoffs, Super Bowl, March Madness) with accurate, insight-driven graphics and commentary.</li>
+            <li>Utilize advanced SQL to query and analyze large historical sports datasets, supporting real-time client inquiries and identifying opportunities for data-driven storytelling.</li>
+            <li>Led product evaluation for an LLM-based AI tool by developing domain-specific question sets, establishing ground-truth labels, and identifying systematic error patterns to improve model accuracy.</li>
+          </ul>
+        </div>
+        
+        <div class="job-entry">
+          <div class="job-header">
+            <h3>Data Science Intern | Data Scientist</h3>
+            <span class="job-date">May 2022 – April 2023</span>
+          </div>
+          <p class="job-details">Sedgwick Claims Management Services | Remote</p>
+          <ul>
+            <li>Completed end-to-end data science projects such as fraudulent claim detection using unsupervised learning or large loss prediction with regression, combining skills in Dataiku, SQL, and R resulting in improved claim triage accuracy and reduced manual review workload.</li>
+            <li>Developed a gradient boosting model to identify high-risk workers' compensation claims, streamlining the prioritization process for claims examiners, increasing examiners’ prioritization efficiency and reducing claim settlement time.</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section class="resume-section">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="job-entry">
+          <div class="job-header">
+            <h3>Syracuse University</h3>
+            <span class="job-date">August 2018 – May 2022</span>
+          </div>
+          <p class="job-details">B.S. Economics & B.S. Sport Analytics | Syracuse, NY</p>
+          <ul>
+            <li>GPA: 3.76</li>
+            <li>Achievements: Dean’s List, Berlin Sport Analytics Scholar, Economics Distinction Program, & Omicron Delta Epsilon Economic Honor Society</li>
+          </ul>
+        </div>
+      </section>
+
     </main>
   </div>
-
-  <style>
-    .resume-viewer {
-      width: 100%;
-      height: 800px;
-      border: none;
-      margin: 20px 0;
-    }
-  </style>
-</body>
-</html>
 </body>
 </html>
 
