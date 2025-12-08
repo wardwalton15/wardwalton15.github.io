@@ -1,38 +1,58 @@
-body {
-  font-family: Arial, sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
-  background: #dbe4ee;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
 header {
-  background: #58a6f5;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 1rem;
-  position: sticky;
-  top: 0;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #eaeaea;
+  padding: 2rem 20px;
 }
 
 nav {
   display: flex;
+  gap: 25px;
   justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 nav a {
-  margin: 0 1rem;
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  color: #555;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
 }
 
 nav a:hover {
-  color: white;
+  color: #2563eb;
 }
 
 main {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+main h1 {
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+main > p {
+  margin-bottom: 1.5rem;
+  color: #666;
 }
 
 .card-grid {
