@@ -24,6 +24,12 @@ body {
   line-height: 1.6;
 }
 
+img {
+  max-width: 100%; /* Ensures the image never overflows its container */
+  height: auto;    /* Maintains the image's aspect ratio */
+  display: block;  /* Removes unnecessary space below the image */
+}
+
 /* --- 2. The Header (Menu Bar) --- */
 header {
   background-color: var(--card-color);
