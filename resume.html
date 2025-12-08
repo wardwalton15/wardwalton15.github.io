@@ -9,40 +9,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <nav>
+        <a href="index.html">About</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="writing.html">Writing</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <main>
+      <h1>Resume</h1>
+      <p>
+        Download the PDF: 
+        <a href="resume.pdf" target="_blank" style="color: #059669; font-weight: 600;">Download</a>
+      </p>
+      <iframe src="resume.pdf" class="resume-viewer"></iframe>
+      <p style="margin-top: 1.5rem;">
+        <a href="https://www.linkedin.com/in/ward-walton/" target="_blank" style="color: #059669; font-weight: 600; text-decoration: none;">
+          <i class="fab fa-linkedin"></i> Connect on LinkedIn
+        </a>
+      </p>
+    </main>
+  </div>
+
   <style>
-    main {
-      margin-top: 2rem;
-    }
     .resume-viewer {
       width: 100%;
       height: 800px;
       border: none;
+      margin: 20px 0;
     }
   </style>
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">About</a>
-      <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
-      <a href="writing.html">Writing</a>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Resume</h1>
-    <p>
-      Download the PDF: 
-      <a href="resume.pdf" target="_blank" style="color: #059669; font-weight: 600;">Download</a>
-    </p>
-    <iframe src="resume.pdf" class="resume-viewer"></iframe>
-    <p style="margin-top: 1.5rem;">
-      <a href="https://www.linkedin.com/in/ward-walton/" target="_blank" style="color: #059669; font-weight: 600; text-decoration: none;">
-        <i class="fab fa-linkedin"></i> Connect on LinkedIn
-      </a>
-    </p>
-  </main>
+</body>
+</html>
 </body>
 </html>
 
