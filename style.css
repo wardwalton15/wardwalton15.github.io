@@ -6,12 +6,13 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #F6FEF9;
+  color: #062E1D;
   line-height: 1.6;
 }
 
 header {
+  background-color: #FFFFFA;
   margin-bottom: 3rem;
   border-bottom: 1px solid #eaeaea;
   padding: 2rem 20px;
@@ -27,14 +28,14 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #555;
+  color: #062E1D;
   font-weight: 600;
   font-size: 0.95rem;
   transition: color 0.2s ease;
 }
 
 nav a:hover {
-  color: #2563eb;
+  color: #059669;
 }
 
 main {
@@ -47,12 +48,12 @@ main h1 {
   font-size: 2rem;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
-  color: #111;
+  color: #062E1D;
 }
 
 main > p {
   margin-bottom: 1.5rem;
-  color: #666;
+  color: #062E1D;
 }
 
 .card-grid {
@@ -63,7 +64,7 @@ main > p {
 }
 
 .card {
-  background: white;
+  background: #FFFFFA;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -85,10 +86,11 @@ main > p {
 .card h2 {
   margin: 10px;
   font-size: 1.2em;
+  color: #062E1D;
 }
 
 .card p {
   margin: 0 10px 10px;
   font-size: 0.95em;
-  color: #555;
+  color: #062E1D;
 }
