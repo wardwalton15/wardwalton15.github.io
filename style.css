@@ -79,35 +79,102 @@ nav a:hover, nav a.active {
 }
 
 /* --- 4. About Page Specifics --- */
-.about-container {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  flex-direction: row-reverse; 
-  flex-wrap: wrap-reverse; 
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
 }
 
-.about-text {
-  flex: 1;
-  min-width: 280px;
-}
-
-.about-photo {
-  width: 160px;
-  height: 160px;
+.about-photo-centered {
+  width: 140px;
+  height: 140px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 3px solid var(--accent-color);
+  box-shadow: 0 6px 16px rgba(5, 150, 105, 0.15);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
 }
 
-.info-group { margin-bottom: 0.8rem; }
+.about-photo-centered:hover {
+  transform: scale(1.05);
+}
+
+.about-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.about-content {
+  margin-top: 2rem;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.info-group {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.info-icon {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  min-width: 30px;
+  flex-shrink: 0;
+}
+
+.info-group div {
+  flex: 1;
+}
 
 .label {
   font-weight: 700;
   color: var(--text-color);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.info-group p {
+  margin: 0;
+  color: var(--text-color);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.bio-section {
+  background-color: rgba(5, 150, 105, 0.05);
+  border-left: 3px solid var(--accent-color);
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+
+.bio-section p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
   letter-spacing: 0.05em;
   margin-right: 5px;
 }
