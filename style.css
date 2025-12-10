@@ -95,10 +95,11 @@ nav a:hover, nav a.active {
   box-shadow: 0 6px 16px rgba(5, 150, 105, 0.15);
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease;
+  transform: translateX(-8px);
 }
 
 .about-photo-centered:hover {
-  transform: scale(1.05);
+  transform: translateX(-8px) scale(1.05);
 }
 
 .about-header h1 {
@@ -114,6 +115,36 @@ nav a:hover, nav a.active {
   color: var(--accent-color);
   font-weight: 600;
   margin-bottom: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.social-link i {
+  font-size: 0.95rem;
+}
+
+.social-link:hover {
+  background: var(--accent-color);
+  color: #FFFFFA;
 }
 
 .about-content {
@@ -175,9 +206,7 @@ nav a:hover, nav a.active {
   line-height: 1.6;
   color: var(--text-color);
 }
-  letter-spacing: 0.05em;
-  margin-right: 5px;
-}
+ 
 
 /* --- 5. Project Page Specifics --- */
 .card-grid {
