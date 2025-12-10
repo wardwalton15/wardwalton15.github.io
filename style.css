@@ -1,6 +1,4 @@
-:root {
-  --heading-font: 'Merriweather', serif;
-}
+
 
 /* Import a nicer heading font for card titles */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
@@ -261,7 +259,7 @@ nav a:hover, nav a.active {
 }
 
 .card h2, .card-body h2 {
-  font-family: var(--heading-font);
+  font-family: var(--font-main);
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--text-color);
