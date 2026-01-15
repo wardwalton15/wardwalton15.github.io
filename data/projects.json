@@ -1,15 +1,26 @@
 [
   {
     "title": "NBA MVP Predictor",
-    "description": "A machine learning approach to predict the NBA's most prestigious individual award.",
+    "description": "A machine learning approach to predict the NBA's most prestigious individual award using gradient boosting and 40+ seasons of data.",
     "thumb": "images/project1-thumb.jpg",
-    "link": "project1.html"
+    "link": "project1.html",
+    "type": "internal",
+    "date": "2025-08-01",
+    "tags": ["Machine Learning", "Python", "Sports Analytics", "NBA"],
+    "category": "Data Science",
+    "featured": true,
+    "tools": ["Python", "Pandas", "Scikit-learn", "Beautiful Soup"]
   },
   {
     "title": "Project Example 2",
     "description": "Here's the description of project example 2.",
     "thumb": "images/project2-thumb.jpg",
-    "link": "project2.html"
+    "link": "project2.html",
+    "type": "internal",
+    "date": "2025-06-15",
+    "tags": ["Data Visualization", "SQL", "Analytics"],
+    "category": "Analytics",
+    "featured": false,
+    "tools": ["SQL", "Tableau", "Python"]
   }
 ]
-

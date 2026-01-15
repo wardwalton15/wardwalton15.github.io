@@ -1,14 +1,26 @@
 [
   {
-    "title": "Writing Example 1",
-    "description": "Here's the description of writing example 1.",
-    "thumb": "images/writing1-thumb.jpg",
-    "link": "writing1.html"
+    "title": "Most Valuable Predictor",
+    "description": "Predicting NBA MVP winners using machine learning. An analysis of 40+ seasons of basketball data.",
+    "thumb": "images/project1-thumb.jpg",
+    "link": "https://wardwalton.substack.com/p/most-valuable-predictor",
+    "type": "external",
+    "date": "2024-04-15",
+    "tags": ["NBA", "Machine Learning", "Sports Analytics"],
+    "category": "Sports Analytics",
+    "featured": true,
+    "tools": ["Python", "Machine Learning"]
   },
   {
     "title": "Writing Example 2",
     "description": "Here's the description of writing example 2.",
     "thumb": "images/writing2-thumb.jpg",
-    "link": "writing2.html"
+    "link": "https://wardwalton.substack.com/",
+    "type": "external",
+    "date": "2024-03-01",
+    "tags": ["Data Science", "Analytics"],
+    "category": "Data Science",
+    "featured": false,
+    "tools": []
   }
 ]
