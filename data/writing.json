@@ -10,17 +10,5 @@
     "category": "Sports Analytics",
     "featured": true,
     "tools": ["Python", "Machine Learning"]
-  },
-  {
-    "title": "Writing Example 2",
-    "description": "Here's the description of writing example 2.",
-    "thumb": "images/writing2-thumb.jpg",
-    "link": "https://wardwalton.substack.com/",
-    "type": "external",
-    "date": "2024-03-01",
-    "tags": ["Data Science", "Analytics"],
-    "category": "Data Science",
-    "featured": false,
-    "tools": []
   }
 ]

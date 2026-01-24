@@ -22,17 +22,5 @@
     "category": "Data Science",
     "featured": true,
     "tools": ["Python", "Pandas", "Scikit-learn", "Beautiful Soup"]
-  },
-  {
-    "title": "Project Example 2",
-    "description": "Here's the description of project example 2.",
-    "thumb": "images/project2-thumb.jpg",
-    "link": "project2.html",
-    "type": "internal",
-    "date": "2025-06-15",
-    "tags": ["Data Visualization", "SQL", "Analytics"],
-    "category": "Analytics",
-    "featured": false,
-    "tools": ["SQL", "Tableau", "Python"]
   }
 ]
