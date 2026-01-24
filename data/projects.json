@@ -1,5 +1,17 @@
 [
   {
+    "title": "Reading My Way Around the World",
+    "description": "A geographical visualization of the books I've read, mapped to their author's countries around the world using Python and Folium.",
+    "thumb": "images/book-map-thumb.jpg",
+    "link": "ward_book_map.html",
+    "type": "internal",
+    "date": "2026-01-24",
+    "tags": ["Data Visualization", "Python", "Reading", "Geography"],
+    "category": "Data Visualization",
+    "featured": false,
+    "tools": ["Python", "Folium", "Leaflet"]
+  },
+  {
     "title": "NBA MVP Predictor",
     "description": "A machine learning approach to predict the NBA's most prestigious individual award using gradient boosting and 40+ seasons of data.",
     "thumb": "images/project1-thumb.jpg",
