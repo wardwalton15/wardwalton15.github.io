@@ -21,7 +21,6 @@
   <meta property="og:image" content="https://wardwalton15.github.io/images/project1-thumb.jpg" />
   <meta property="og:site_name" content="Ward Walton" />
   <meta property="article:published_time" content="2025-08-01T00:00:00Z" />
-  <meta property="article:modified_time" content="2025-08-01T00:00:00Z" />
   <meta property="article:author" content="Ward Walton" />
   <meta property="article:tag" content="Machine Learning" />
   <meta property="article:tag" content="NBA" />
@@ -38,7 +37,10 @@
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,400&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -71,151 +73,184 @@
     "inLanguage": "en-US"
   }
   </script>
-  <style>
-    .project-page {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      line-height: 1.6;
-    }
-    .project-page h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    .project-meta {
-      color: #666;
-      font-size: 0.9rem;
-      margin-bottom: 1.5rem;
-    }
-    .project-page img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin: 20px 0;
-    }
-    .project-section {
-      margin: 2rem 0;
-    }
-    .project-section h2 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.25rem;
-    }
-    pre {
-      background: #f4f4f4;
-      padding: 1rem;
-      border-radius: 6px;
-      overflow-x: auto;
-      font-family: monospace;
-    }
-  </style>
 </head>
 <body>
+
   <header>
     <div class="header-content">
+      <a href="index.html" class="site-brand">W.W.</a>
       <nav>
         <a href="index.html">About</a>
-        <a href="resume.html">Resume</a>
-        <a href="projects.html" class="active">Projects</a> <a href="writing.html">Writing</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="writing.html">Writing</a>
       </nav>
     </div>
   </header>
 
-  <main class="project-page">
-    <h1>NBA MVP Predictor</h1>
-    <p class="project-meta">Published: Auguest 2025 Created: April 2024 | Tools: Python, Pandas, Beautiful Soup, Scikit-learn </p>
+  <div class="container">
+    <main class="article-page">
 
-    <img src="images/project1-thumb.jpg" alt="NBA MVP Predictor">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb fade-in">
+        <a href="projects.html"><i class="fas fa-arrow-left"></i> Projects</a>
+      </div>
 
-    <div class="project-section">
-      <h2>Introduction/Motivation</h2>
-      <p>
-        As the 2023-24 NBA regular season comes to an end, Nikola Jokic is poised to hoist his 3rd MVP trophy. 
-        The Serbian superstar is widely regarded as the best basketball player in the world and has led his Denver Nuggets squad to a top seed in the competitive 
-        Western conference this season. All of this coming off an NBA Championship last season, the first in Nuggets team history. MVP awards are indicative of 
-        individual greatness and are usually the second most cited accolade when discussing all-time great players behind only championship rings. 
-        Nikola Jokic is my favorite NBA player. His finesse, strength, and passing mastery are beautiful to watch. But how do these basketball skills translate 
-        to cold hard numbers? Would a statistical model be able to pick up on the attributes most influential to MVP voting? To answer these questions, as well as 
-        hone my data science and machine learning skills using Python, I decided to embark on a project with the goal of predicting this years MVP race. 
-        Many argue that the MVP is a primarily narrative-driven award, and that players with the best story behind them will end up being selected by the media members 
-        who vote on the award. I wondered how accurately it could be predicted purely using player and team statistics. While predicting the frontrunners for the award 
-        can be relatively easy (just picking the best players on the best teams), I assumed it would be more difficult to predict the overall winner as races can often be 
-        very competitive. For example, last season three players (Jokic, Joel Embiid, and Giannis Antetokounmpo) all received first place votes. 
-        They each had gaudy statistical seasons and their teams all won at least 50 games. They also each had their own particular narrative behind why they should win 
-        the award. Differentiating between them statistically would be difficult. That’s why I set out to create a machine learning model trained on historic data 
-        which could be used to predict who would win the award going forward. If the MVP award turned out to be predictable it would show that narrative might not 
-        play as big a role in voting as the public suspects. The following will be both a technical write-up of my project and an analysis of the NBA MVP award.
-      </p>
-    </div>
+      <!-- Article Header -->
+      <header class="article-header fade-in fade-in--delay-1">
+        <div class="article-meta">
+          <span>Data Science</span>
+          <span class="separator">·</span>
+          <span>Published Aug 2025</span>
+          <span class="separator">·</span>
+          <span>Created Apr 2024</span>
+        </div>
+        <h1 class="page-title">NBA MVP Predictor</h1>
+        <p class="article-subtitle">A machine learning approach to predicting the NBA's most prestigious individual award — using gradient boosting, 40+ seasons of basketball data, and a few hard lessons about Steve Nash.</p>
+        <div class="pill-list" style="margin-top: var(--sp-md);">
+          <span class="pill">Machine Learning</span>
+          <span class="pill">Python</span>
+          <span class="pill">Sports Analytics</span>
+          <span class="pill">NBA</span>
+          <span class="pill">Gradient Boosting</span>
+        </div>
+      </header>
 
-    <div class="project-section">
-      <h2>Data</h2>
-      <p>
-        The first step towards creating any kind of machine learning model is collecting the requisite data. In order to predict future outcomes of 
-        something you need enough historic data on the topic to unearth trends and relationships between what you’re trying to predict and other measurable 
-        variables. For this specific project the first piece of data I needed was MVP voting results for each NBA season. I decided to start my analysis with 
-        the 1980-81 season, as that was the first season in which the league used media voting to determine the MVP award. The next step was collecting season-level 
-        data on each NBA player and team in every season since 1980-81. To get all this lovely data I used the Beautiful Soup package in Python to scrape information 
-        from various basketball-reference.com pages. This automates what would otherwise be a laborious and time-consuming task.
-        Once collected, the data still need to be manipulated into the proper format for analysis and specific stats which are likely to play a role in 
-        MVP voting must be chosen (think scoring lots of points, or being the best player on a really good team) . This is known as feature engineering and selection. 
-        Using my knowledge of basketball I narrowed down the potential stats to include in the model, choosing ones that revolve around a players impact and their team’s 
-        success. Some of these stats (or features) were already available in the data like points per game, while others I had to create myself. 
-        For example, it’s often mentioned that players who have already won the MVP award are less likely to win it again because of “voter fatigue”. 
-        Essentially, this theory states that the media members who vote on the award get tired of voting for the same player every year. 
-        To capture this I added a variable that calculated the number of prior MVPs each player had won. 
-        This phenomenon is potentially what kept Jokic from winning his 3rd MVP last season when voters awarded it to first-time winner Joel Embiid instead.
-      </p>
-    </div>
+      <hr class="rule">
 
-    <div class="project-section">
-      <h2>What’s in the Model?</h2>
-      <p>
-        Through the iterative process of feature selection and engineering I wound up with ten variables to use for predicting MVP vote share. I won’t list them all here but they are primarily advanced metrics like win shares and box plus-minus which can be calculated using only box score data making them available all the way back 1980-81. One issue with a project like this is that the data is inherently imbalanced. There are way more cases of players who didn’t receive any MVP votes than players who did. This can cause problems with some machine learning methods. To alleviate this concern I chose a gradient boosting model, as they are known to handle imbalanced data more effectively. I also chose to approach the problem as a regression problem (predicting a continuous number like vote share) rather than a classification problem (predicting a category, such as won/didn’t win MVP.) Gradient boosting is effective for this project because it constructs a series of decision trees, each designed to correct the errors of the previous one. This approach is particularly suited for handling the imbalanced nature of MVP voting data, as it focuses on improving predictions incrementally, allowing the model to adaptively focus on harder-to-classify instances, which are often the nuanced cases in MVP selections.
-        To create the model I split my historic data into training and testing sets. The training data will be used to make the model which will then be evaluated for accuracy on the testing set. To evaluate the model I used mean square error (MSE.) I iteratively added and subtracted different variables from the model with the goal of minimizing MSE. Once trained I was able to evaluate on the test data and see which of the features were most important. Here are the top five features in terms of importance for predicting MVP vote share:
+      <!-- Hero Image -->
+      <figure class="article-hero fade-in fade-in--delay-2">
+        <img src="images/project1-thumb.jpg" alt="NBA MVP Predictor — gradient boosting model thumbnail">
+        <figcaption>Gradient boosting model trained on 40+ seasons of NBA statistics (1980–81 onward)</figcaption>
+      </figure>
+
+      <!-- Tools / Vitals -->
+      <div class="fade-in fade-in--delay-2" style="margin-bottom: var(--sp-xl);">
+        <span class="label">Tools &amp; Methods</span>
+        <div class="stat-row">
+          <span class="stat-key">Language</span>
+          <span class="stat-value">Python 3</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">Libraries</span>
+          <span class="stat-value">Pandas · Beautiful Soup · Scikit-learn · Matplotlib</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">Model</span>
+          <span class="stat-value">Gradient Boosting Regressor (vote share prediction)</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">Data Source</span>
+          <span class="stat-value">Basketball-Reference.com · 1980–81 to 2023–24</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">Accuracy</span>
+          <span class="stat-value">37 of 43 past MVP seasons correctly predicted (86%)</span>
+        </div>
+      </div>
+
+      <hr class="rule rule--sm">
+
+      <!-- Article Body -->
+      <div class="article-content fade-in fade-in--delay-3">
+
+        <h2>Introduction</h2>
         <p>
-        <img src="images/project1-chart.jpg" alt="Variable Importance">    
+          As the 2023–24 NBA regular season came to a close, Nikola Jokić was poised to hoist his third MVP trophy. The Serbian superstar is widely regarded as the best basketball player in the world and led his Denver Nuggets to a top seed in the competitive Western Conference — coming off an NBA Championship the season prior, the first in franchise history.
         </p>
-        Offensive Box Plus-Minus (OBPM) is a box score-based metric that measures a basketball player's offensive contribution in terms of points per 100 possessions. OBPM extends beyond traditional stats like points per game by accounting for a player's efficiency and overall offensive impact while they are on the court. OBPM is particularly relevant to MVP discussions because it isolates the offensive aspect of a player’s game, which MVP voters tend to regard more highly than defensive performance. A high OBPM indicates that a player is not only scoring but doing so efficiently and in ways that significantly boost their team's offensive output. Win Shares per 48 minutes (WS/48) is a stat which attempts to measure how many wins a player contributes to their team. Higher WS/48 values suggest that a player is not just accumulating statistics, but doing so in a way that significantly enhances their team's ability to win games. Given that MVP voters often favor players who lead successful teams, this metric is understandably instrumental. It reflects not just performance but impactful performance. Having these two advanced metrics as the two most important features shows how comprehensive one-number analytics can be helpful in assessing players. Features three through five are much more straightforward; team win percentage, points per game, and turnovers per game. Now that the model is fully operational we can check how it performed on past seasons and predict the 2023-24 NBA MVP.
-      </p>
-    </div>
+        <p>
+          MVP awards are indicative of individual greatness and are usually the second most cited accolade when discussing all-time great players, behind only championship rings. Jokić is my favorite NBA player. His finesse, strength, and passing mastery are beautiful to watch. But how do these basketball skills translate to cold hard numbers? Would a statistical model be able to pick up on the attributes most influential to MVP voting?
+        </p>
+        <p>
+          Many argue that the MVP is a primarily narrative-driven award — that players with the best story behind them end up being selected by the media members who vote. I wondered how accurately it could be predicted purely using player and team statistics. While picking the frontrunners can be relatively easy (just find the best player on the best team), correctly identifying the outright winner in close races is far harder. Last season three players — Jokić, Joel Embiid, and Giannis Antetokounmpo — each received first-place votes after statistically gaudy seasons. That's exactly the kind of differentiation I set out to test.
+        </p>
 
-    <div class="project-section">
-      <h2>Past Season Predictions</h2>
-      <p>
-        We are through the dry technical sections and we can get to the results of the project. Using the predicted vote share from the model it correctly predicted 37/43 (86%) of the past MVP seasons correctly! I was surprised by this result, I assumed the model would struggle in years when the winner wasn’t cut and dry. Diving into the incorrect predictions, in four of the seasons it predicted incorrectly that the true MVP winner finished second. These years (1989, 1994, 1997, and 2008) were some of the closest races of all time. In 1989, the model predicted Michael Jordan to take home his 2nd MVP but instead it was Magic Johnson securing the award. This was the closest margin of any season predicted by the model, with the two separated by less than half a percent of predicted vote share. In 1994, Hakeem Olajuwon and David Robinson both had tremendous seasons and the model chose Robinson while the media chose Hakeem. Same goes with 1997 and 2008. In 1997 Michael Jordan was eked out by Karl Malone for an MVP that Jordan probably should’ve won; an opinion corroborated by the model. In 2008 Kobe won when many, including the model, thought Chris Paul to be more deserving.
-        So in all but two seasons this simple machine learning model was able to predict the MVP winner to at least finish top-2 in vote share. But what’s up with those two other seasons? It turns out that my model hates Steve Nash. In 2005 and 2006 Nash won back-to-back MVP awards yet the model predicted him finishing outside the top six in voting both of those seasons (9th in 2005 and 7th in 2006), while instead predicting Shaq to win in 2005 and Lebron in 2006, both of whom ended up finishing second to Nash. Luckily for the credibility of my model, these seasons have been deemed two of the most controversial finishes for the award in history. In my mind there are a couple things limiting Nash statistically. He was a poor defender with a negative defensive box plus-minus dragging him down. In 2005 he didn’t lead his own team in win shares and didn’t average over 20 points per game in either season. There have been accusations of racial bias by the media voters in these seasons, something the model is definitely not trained to pick up on. 
-        In Bill Simmons’ Book of Basketball he categorizes the MVP winners. Both 2005 and 2006 fall into the last category; Outright Travesties (along with 1997 and 2008, meaning 4/6 of the model’s misses were deemed by Simmons as travesties). Regarding Nash’s 2005 MVP campaign he says that it “initially seemed preposterous because it would have been the first time (a) a table setter won the award; (b) a non-franchise player won; and (c) a defensive liability won. Those are three pretty big leaps. Were there racial implications to the Nash/MVP bandwagon? In a roundabout way”. On the 2006 award he quotes a column of his from the time “if you actually end up picking him [Nash], either you’re not watching enough basketball or you just want to see a white guy win back-to-back MVP’s”. Statistically these Nash MVP seasons are an anomaly and an example or narrative driving MVP voting.
-      </p>
-    </div>
+        <h2>Data</h2>
+        <p>
+          The first step toward any machine learning model is collecting the right data. I needed both MVP voting results and season-level player and team statistics for every NBA season since 1980–81, when the league first used media voting to determine the award.
+        </p>
+        <p>
+          To collect it all, I used Python's Beautiful Soup package to scrape various basketball-reference.com pages — automating what would otherwise be a laborious, season-by-season manual effort. Once gathered, the data required cleaning and feature engineering: selecting and constructing the stats most likely to influence MVP voting.
+        </p>
+        <p>
+          Using my knowledge of basketball, I narrowed down potential features to those revolving around player impact and team success. Some were already available — points per game, win shares — while others I had to create from scratch. A good example: the widely discussed theory of "voter fatigue," the idea that media voters grow tired of awarding the same player year after year. To capture this, I added a variable counting each player's prior MVP wins. This phenomenon may well explain why Jokić was denied a third consecutive MVP last season when voters chose first-time winner Joel Embiid instead.
+        </p>
 
-    <div class="project-section">
-      <h2>2023-24 MVP Predictions</h2>
-      <img src="images/project1-chart2.jpg" alt="2023-24 Predictions">   
-      <p>
-        Above are the top-5 finishers in predicted vote share for the 2024 award. 2023-24 came with new criteria imposed on players to be eligible for awards. Players must have played at least 20 minutes in at least 65 games, allowing for only two “near-misses” where they played 15-19 minutes. I instilled these restrictions on my predictions even though they removed Joel Embiid from contention and I was interested to see where his injury-marred season would stack up. From 5-1 here are the predicted MVP candidates;
-        Jayson Tatum - The best player on the league’s best team is usually a good case to pick up some MVP votes. Tatum is hindered by his elite teammates causing him to not put up as impressive stats. The advanced stats aren’t as favorable of him as the rest of these candidate likely due to Jaylen Brown and Kristaps Porzingis’ impact.
-        Shai Gilgeous-Alexander - I thought Shai would finish second in predicted share. He has been the picture of consistency for the Thunder this season, leading them to a top-3 record in the West. He averages over 30 points per game and is second in the league in WS/48 behind Jokic.
-        Giannis Antetokounmpo - The pairing of him and Damian Lillard was perhaps the most talked about thing coming into the season. If it’s possible to average 30/11/6 on the second best team in a conference quietly, Giannis has done just that.
-        Luka Doncic - The NBA’s leading scorer is a one-man wrecking crew. He puts up absolutely ridiculous box score numbers nearly every night and his team has won over 50 games.
-        Nikola Jokic - Statistically nobody can touch Jokic. The advanced numbers he puts up season after season are historic. The Nuggets currently have the best record in the West and he is miles ahead of the rest of the pack in WS/48 and OBPM. This season’s MVP has been all but wrapped up since February.
-      </p>
-    </div>
+        <h2>What's in the Model?</h2>
+        <p>
+          Through iterative feature selection I wound up with ten variables to predict MVP vote share — primarily advanced metrics like Win Shares and Box Plus-Minus, which can be calculated from box score data all the way back to 1980–81.
+        </p>
+        <p>
+          One challenge with this project is that the data is inherently imbalanced: far more players receive zero MVP votes than receive any at all. To address this, I chose a gradient boosting model, which handles imbalanced data more effectively by constructing a series of decision trees, each correcting the errors of the previous one. I also framed it as a regression problem — predicting continuous vote share — rather than a binary classification.
+        </p>
+        <p>
+          After splitting the data into training and testing sets and iterating on feature combinations to minimize mean squared error, I evaluated variable importance. Here are the top five predictors:
+        </p>
 
-    <div class="project-section">
-      <h2>Conclusion/Future Additions</h2>
-      <p>
-        In this project I investigated the predictability of the NBA MVP award and what factors contributed most towards an MVP level season. To do this I scraped data from basketball-reference.com, created a gradient boosting model and applied the model to 40+ seasons of NBA data. I found advanced one-number metrics like offensive box plus-minus and win-shares/48 to be among the most important predictors of the award correctly predicting 37/43 past seasons. Turning my attention towards the future I predicted another win for Nikola Jokic in 2024 and analyzed the cases for each of the top-5 candidates. This project was not without it’s limitations. The most glaring of these was the inability to quantify media narrative during the season. In the future I could scrape news articles about the NBA and conduct sentiment analysis to see which players were viewed most favorably during the course of the season. This could then increase the predictive accuracy of the model, potentially allowing for it to correctly chose the winner in those close seasons it missed or pick up on the media’s enthusiasm for Steve Nash. Overall, this was an enjoyable, insightful project where I learned a lot about data science in Python as well as historic NBA MVP races.
-      </p>
-    </div>
+        <figure>
+          <img src="images/project1-chart.jpg" alt="Variable importance chart — top 5 MVP predictors">
+          <figcaption>Top 5 features by importance: OBPM leads, followed by WS/48, team win %, PPG, and TOV/G</figcaption>
+        </figure>
 
-    <div class="project-section">
-      <h2>Links</h2>
-      <ul>
-        <li><a href="https://wardwalton.substack.com/p/most-valuable-predictor" target="_blank">View Write Up on Substack</a></li>
-        <li><a href="projects.html">← Back to Projects</a></li>
-      </ul>
-    </div>
-  </main>
+        <p>
+          <strong>Offensive Box Plus-Minus (OBPM)</strong> measures a player's offensive contribution in points per 100 possessions, extending beyond traditional stats by accounting for efficiency and overall impact on the court. It's particularly relevant because MVP voters tend to weight offensive performance heavily. <strong>Win Shares per 48 minutes (WS/48)</strong> estimates how many wins a player contributes to their team — it rewards not just accumulating stats, but doing so in ways that translate to victories. The remaining top features are more intuitive: team win percentage, points per game, and turnovers per game.
+        </p>
+
+        <h2>Past Season Predictions</h2>
+        <p>
+          Using predicted vote share from the model, it correctly identified the MVP winner in 37 of 43 past seasons — an 86% accuracy rate. I was genuinely surprised. I expected the model to struggle in close races.
+        </p>
+
+        <blockquote>
+          Of the six incorrect predictions, four involved seasons that are now widely considered among the most controversial MVP decisions in league history.
+        </blockquote>
+
+        <p>
+          In four of the six misses, the model's predicted winner finished second. The 1989, 1994, 1997, and 2008 races were each among the closest ever. In 1989 it predicted Michael Jordan but the media chose Magic Johnson — the two were separated by less than half a percent of predicted vote share. In 1997 the model sided with Jordan over Karl Malone; in 2008, with Chris Paul over Kobe.
+        </p>
+        <p>
+          The two truly anomalous misses: Steve Nash's back-to-back wins in 2005 and 2006. The model placed Nash outside the top six in voting both years — predicting Shaquille O'Neal for 2005 and LeBron for 2006, who finished second to Nash in each. Nash carried a negative defensive box plus-minus, didn't lead his own team in win shares in 2005, and didn't average 20 points per game in either season. Bill Simmons categorized both wins as "Outright Travesties" in <em>The Book of Basketball</em>. The model, at least, agrees.
+        </p>
+
+        <h2>2023–24 MVP Predictions</h2>
+
+        <figure>
+          <img src="images/project1-chart2.jpg" alt="2023-24 MVP predicted vote share — top 5 candidates">
+          <figcaption>Top-5 predicted vote share for the 2023–24 NBA MVP award</figcaption>
+        </figure>
+
+        <p>
+          For 2024, I applied the league's new eligibility threshold (65 games minimum), which excluded Joel Embiid's injury-shortened season from contention.
+        </p>
+        <p>
+          <strong>5. Jayson Tatum</strong> — best player on the league's best team, but elite teammates dilute his advanced numbers. <strong>4. Shai Gilgeous-Alexander</strong> — 30+ points per game, top-3 record in the West, second in WS/48 only to Jokić. <strong>3. Giannis Antetokounmpo</strong> — quietly averaging 30/11/6 on Milwaukee's second-best squad. <strong>2. Luka Dončić</strong> — the league's leading scorer, over 50 wins with Dallas. <strong>1. Nikola Jokić</strong> — statistically untouchable. Historic advanced numbers season after season; the Nuggets held the best record in the West; he was miles ahead of the field in both WS/48 and OBPM. This MVP was wrapped up by February.
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>
+          This project investigated the predictability of the NBA MVP award and what factors most strongly drive it. By scraping basketball-reference.com, building a gradient boosting model, and applying it to 40+ seasons of data, I found that advanced metrics — particularly OBPM and WS/48 — are the most powerful predictors, enabling the model to correctly identify the winner 86% of the time.
+        </p>
+        <p>
+          The primary limitation is an inability to quantify media narrative. A natural next step would be scraping news coverage and conducting sentiment analysis throughout the season — tracking which players were discussed most favorably as the race developed. That layer could push accuracy higher in the close, controversial seasons the current model struggles with. But for now, the numbers tell a compelling story on their own.
+        </p>
+
+      </div>
+
+      <hr class="rule">
+
+      <!-- Footer -->
+      <footer class="article-footer fade-in">
+        <div class="article-navigation">
+          <a href="projects.html" class="btn-secondary">
+            <i class="fas fa-arrow-left"></i> Back to Projects
+          </a>
+          <a href="https://wardwalton.substack.com/p/most-valuable-predictor" target="_blank" rel="noopener" class="btn-secondary">
+            Read on Substack <i class="fas fa-arrow-up-right-from-square" style="font-size: 0.55rem;"></i>
+          </a>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
 </body>
 </html>

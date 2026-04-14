@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary Meta Tags -->
-  <title>Writing – Ward Walton | Data Analytics & Insights</title>
-  <meta name="title" content="Writing – Ward Walton | Data Analytics & Insights" />
-  <meta name="description" content="Articles and writing about data science, analytics, sports statistics, and insights by Ward Walton. Read on Substack and explore in-depth analysis." />
-  <meta name="keywords" content="data science writing, analytics blog, sports analytics, Ward Walton articles, Substack, data insights" />
+  <title>Writing – Ward Walton | Essays &amp; Analysis</title>
+  <meta name="title" content="Writing – Ward Walton | Essays &amp; Analysis" />
+  <meta name="description" content="Articles and writing about data science, analytics, sports statistics, and inequality by Ward Walton. Read on Substack and explore in-depth analysis." />
+  <meta name="keywords" content="data science writing, analytics blog, sports analytics, Ward Walton articles, Substack, data insights, political economy, inequality" />
   <meta name="author" content="Ward Walton" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://wardwalton15.github.io/writing.html" />
@@ -17,7 +17,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://wardwalton15.github.io/writing.html" />
   <meta property="og:title" content="Writing – Ward Walton" />
-  <meta property="og:description" content="Articles about data science, analytics, and sports statistics. Read on Substack." />
+  <meta property="og:description" content="Articles about data science, analytics, sports statistics, and inequality. Read on Substack." />
   <meta property="og:image" content="https://wardwalton15.github.io/profile.jpg" />
   <meta property="og:site_name" content="Ward Walton" />
 
@@ -31,7 +31,7 @@
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,400&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -40,11 +40,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <div class="header-content">
+      <a href="index.html" class="site-brand">W.W.</a>
       <nav>
         <a href="index.html">About</a>
-        <a href="resume.html">Resume</a>
         <a href="projects.html">Projects</a>
         <a href="writing.html" class="active">Writing</a>
       </nav>
@@ -53,16 +54,28 @@
 
   <div class="container">
     <main>
-      <h1>Writing</h1>
-      <p>
-        <a href="https://wardwalton.substack.com/" target="_blank" style="color: #059669; font-weight: 600; text-decoration: none;">
-          <i class="fas fa-pen-nib"></i> Read on Substack
+
+      <div class="page-header fade-in">
+        <span class="label">Essays &amp; Analysis</span>
+        <h1 class="page-title">Writing</h1>
+        <p class="page-subtitle">Published on Substack and archived here</p>
+      </div>
+
+      <hr class="rule">
+
+      <div class="stat-row fade-in fade-in--delay-1" style="margin-bottom: var(--sp-xl);">
+        <span class="stat-key">Read on Substack</span>
+        <a href="https://wardwalton.substack.com/" target="_blank" rel="noopener" class="btn-secondary" style="padding: 4px 12px;">
+          wardwalton.substack.com <i class="fas fa-arrow-up-right-from-square" style="font-size: 0.55rem;"></i>
         </a>
-      </p>
-      <div id="filters-container"></div>
-      <div id="writing-grid" class="card-grid"></div>
+      </div>
+
+      <div id="filters-container" class="fade-in fade-in--delay-2"></div>
+      <div id="writing-grid" class="card-grid fade-in fade-in--delay-3"></div>
+
     </main>
   </div>
+
   <script src="scripts/writing.js"></script>
 </body>
 </html>

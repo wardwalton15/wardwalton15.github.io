@@ -31,7 +31,10 @@
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,400&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -40,19 +43,29 @@
 
   <header>
     <div class="header-content">
+      <a href="index.html" class="site-brand">W.W.</a>
       <nav>
         <a href="index.html">About</a>
-        <a href="resume.html">Resume</a>
-        <a href="projects.html" class="active">Projects</a> <a href="writing.html">Writing</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="writing.html">Writing</a>
       </nav>
     </div>
   </header>
 
   <div class="container">
     <main>
-      <h1>Projects</h1>
-      <div id="filters-container"></div>
-      <div id="projects-grid" class="card-grid"></div>
+
+      <div class="page-header fade-in">
+        <span class="label">Portfolio</span>
+        <h1 class="page-title">Projects</h1>
+        <p class="page-subtitle">Data science, analytics &amp; visualization work</p>
+      </div>
+
+      <hr class="rule">
+
+      <div id="filters-container" class="fade-in fade-in--delay-1"></div>
+      <div id="projects-grid" class="card-grid fade-in fade-in--delay-2"></div>
+
     </main>
   </div>
 
