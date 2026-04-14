@@ -84,18 +84,15 @@ header {
 }
 
 .site-brand {
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold);
+  display: flex;
+  align-items: center;
   text-decoration: none;
   flex-shrink: 0;
+  opacity: 0.75;
   transition: var(--ease);
 }
 
-.site-brand:hover { color: var(--paper); }
+.site-brand:hover { opacity: 1; }
 
 nav {
   display: flex;
