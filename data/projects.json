@@ -1,9 +1,9 @@
 [
   {
     "title": "Reading My Way Around the World",
-    "description": "A geographical visualization of the books I've read, mapped to their author's countries around the world using Python and Folium.",
+    "description": "A geographical visualization of the books I've read, mapped to their authors' countries around the world using Python and Folium.",
     "thumb": "images/book-map-thumb.jpg",
-    "link": "ward_book_map.html",
+    "link": "book-map.html",
     "type": "internal",
     "date": "2026-01-24",
     "tags": ["Data Visualization", "Python", "Reading", "Geography"],

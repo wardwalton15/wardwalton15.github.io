@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading My Way Around the World – Ward Walton</title>
+  <meta name="description" content="An interactive data visualization mapping the books Ward Walton has read to their authors’ countries using Python, Folium, and Leaflet." />
+  <meta name="author" content="Ward Walton" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://wardwalton15.github.io/book-map.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://wardwalton15.github.io/book-map.html" />
+  <meta property="og:title" content="Reading My Way Around the World" />
+  <meta property="og:description" content="An interactive map connecting the books I read to their authors’ countries." />
+  <meta property="og:image" content="https://wardwalton15.github.io/images/og.png" />
+  <meta property="og:site_name" content="Ward Walton" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Reading My Way Around the World" />
+  <meta property="twitter:description" content="An interactive map connecting the books I read to their authors’ countries." />
+  <meta property="twitter:image" content="https://wardwalton15.github.io/images/og.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,400&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=20260715">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="site-brand" aria-label="Ward Walton — home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 124" height="32" width="29" aria-hidden="true">
+          <path d="M 8,24 Q 56,2 104,24" fill="none" stroke="rgba(240,235,224,0.55)" stroke-width="1.2"/>
+          <circle cx="56" cy="5" r="1.8" fill="rgba(240,235,224,0.55)"/>
+          <rect x="8" y="24" width="28" height="28" rx="4" fill="none" stroke="rgba(240,235,224,0.55)" stroke-width="1.2"/>
+          <rect x="42" y="24" width="28" height="28" rx="4" fill="none" stroke="rgba(240,235,224,0.55)" stroke-width="1.2"/>
+          <rect x="76" y="24" width="28" height="28" rx="4" fill="none" stroke="rgba(240,235,224,0.55)" stroke-width="1.2"/>
+          <rect x="8" y="58" width="28" height="28" rx="4" fill="none" stroke="rgba(240,235,224,0.55)" stroke-width="1.2"/>
+          <rect x="42" y="58" width="28" height="28" rx="4" fill="#f0ebe0"/>
+          <rect x="76" y="58" width="28" height="28" rx="4" fill="none" stroke="rgba(240,235,224,0.55)" stroke-width="1.2"/>
+          <rect x="8" y="92" width="28" height="28" rx="4" fill="none" stroke="rgba(240,235,224,0.55)" stroke-width="1.2"/>
+          <rect x="42" y="92" width="28" height="28" rx="4" fill="none" stroke="rgba(240,235,224,0.55)" stroke-width="1.2"/>
+          <rect x="76" y="92" width="28" height="28" rx="4" fill="none" stroke="rgba(240,235,224,0.55)" stroke-width="1.2"/>
+          <path d="M 70,72 L 90,72 L 90,106" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="90" cy="106" r="2" fill="#c9a84c"/>
+        </svg>
+      </a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="resume.html">Résumé</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <main class="article-page">
+      <div class="breadcrumb fade-in">
+        <a href="projects.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Projects</a>
+      </div>
+
+      <div class="article-header fade-in fade-in--delay-1">
+        <div class="article-meta">
+          <span>Data Visualization</span><span class="separator">·</span><span>Jan 2026</span>
+        </div>
+        <h1 class="page-title">Reading My Way Around the World</h1>
+        <p class="article-subtitle">A geographical view of my reading life—mapping books to their authors’ countries and revealing where my shelves are rich, sparse, and still waiting to be explored.</p>
+        <div class="pill-list" style="margin-top: var(--sp-md);">
+          <span class="pill">Python</span>
+          <span class="pill">Folium</span>
+          <span class="pill">Leaflet</span>
+          <span class="pill">Reading</span>
+        </div>
+      </div>
+
+      <hr class="rule">
+
+      <div class="project-summary fade-in fade-in--delay-2">
+        <div>
+          <span class="label">The Project</span>
+          <p>I wanted a more revealing way to understand what I read than a yearly total. This map groups books by the country associated with each author, turning a personal reading log into a global view of attention and discovery.</p>
+        </div>
+        <div>
+          <span class="label">How It Works</span>
+          <div class="stat-row"><span class="stat-key">Data</span><span class="stat-value">Personal reading log</span></div>
+          <div class="stat-row"><span class="stat-key">Built With</span><span class="stat-value">Python · Folium</span></div>
+          <div class="stat-row"><span class="stat-key">Interaction</span><span class="stat-value">Leaflet layers &amp; tooltips</span></div>
+        </div>
+      </div>
+
+      <div class="map-frame-wrap fade-in fade-in--delay-2">
+        <iframe class="map-frame" src="ward_book_map.html" title="Interactive world map of books read by author country" loading="lazy"></iframe>
+      </div>
+
+      <p class="article-subtitle">Use the controls to zoom and switch layers. Hover or tap countries to explore the distribution. <a href="ward_book_map.html" target="_blank" rel="noopener">Open the full-screen map ↗</a></p>
+
+      <footer class="article-footer">
+        <hr class="rule">
+        <div class="article-navigation">
+          <a href="projects.html" class="btn-secondary"><i class="fas fa-arrow-left" aria-hidden="true"></i> All Projects</a>
+          <a href="project1.html" class="btn-secondary">NBA MVP Predictor <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
