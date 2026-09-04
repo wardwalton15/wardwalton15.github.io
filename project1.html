@@ -12,6 +12,7 @@
   <meta name="author" content="Ward Walton" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://wardwalton15.github.io/project1.html" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article" />
@@ -28,22 +29,22 @@
   <meta property="article:tag" content="Sports Analytics" />
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://wardwalton15.github.io/project1.html" />
-  <meta property="twitter:title" content="NBA MVP Predictor: A Machine Learning Approach" />
-  <meta property="twitter:description" content="Predicting NBA MVP winners using gradient boosting and 40+ seasons of data." />
-  <meta property="twitter:image" content="https://wardwalton15.github.io/images/project1-thumb.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://wardwalton15.github.io/project1.html" />
+  <meta name="twitter:title" content="NBA MVP Predictor: A Machine Learning Approach" />
+  <meta name="twitter:description" content="Predicting NBA MVP winners using gradient boosting and 40+ seasons of data." />
+  <meta name="twitter:image" content="https://wardwalton15.github.io/images/project1-thumb.jpg" />
 
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,400&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,400&amp;family=Libre+Baskerville:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=20260715">
+  <link rel="stylesheet" href="style.css?v=20260903">
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -67,7 +68,7 @@
       }
     },
     "datePublished": "2025-08-01",
-    "dateModified": "2025-08-01",
+    "dateModified": "2026-09-03",
     "keywords": "NBA, MVP, machine learning, Python, gradient boosting, basketball analytics, sports analytics",
     "articleSection": "Data Science",
     "inLanguage": "en-US"
@@ -98,6 +99,7 @@
       <nav>
         <a href="index.html">About</a>
         <a href="projects.html" class="active">Projects</a>
+        <a href="writing.html">Writing</a>
         <a href="resume.html">Résumé</a>
       </nav>
     </div>
@@ -116,9 +118,9 @@
         <div class="article-meta">
           <span>Data Science</span>
           <span class="separator">·</span>
-          <span>Published Aug 2025</span>
+          <span>Updated Sep 2026</span>
           <span class="separator">·</span>
-          <span>Created Apr 2024</span>
+          <span>Original model Apr 2024</span>
         </div>
         <h1 class="page-title">NBA MVP Predictor</h1>
         <p class="article-subtitle">A machine learning approach to predicting the NBA's most prestigious individual award — using gradient boosting, 40+ seasons of basketball data, and a few hard lessons about Steve Nash.</p>
@@ -159,8 +161,8 @@
           <span class="stat-value">Basketball-Reference.com · 1980–81 to 2023–24</span>
         </div>
         <div class="stat-row">
-          <span class="stat-key">Accuracy</span>
-          <span class="stat-value">37 of 43 past MVP seasons correctly predicted (86%)</span>
+          <span class="stat-key">Retrospective ranking</span>
+          <span class="stat-value">37 of 43 historical winners ranked first (86%)</span>
         </div>
       </div>
 
@@ -213,8 +215,14 @@
 
         <h2>Past Season Predictions</h2>
         <p>
-          Using predicted vote share from the model, it correctly identified the MVP winner in 37 of 43 past seasons — an 86% accuracy rate. I was genuinely surprised. I expected the model to struggle in close races.
+          In the retrospective ranking exercise, the model placed the eventual MVP winner first in 37 of 43 past seasons — an 86% hit rate. I was genuinely surprised. I expected it to struggle in close races.
         </p>
+
+        <aside class="method-note" aria-labelledby="validation-note-title">
+          <span class="label" id="validation-note-title">Validation note · added Sep 2026</span>
+          <p>The currently published training pipeline uses a random 80/20 split of player-seasons to measure vote-share error. That is useful as a fit check, but it is not a strict historical backtest: players from the same season can land in both sets, and later seasons can influence patterns used to assess earlier ones. The 37-of-43 figure should therefore be read as a retrospective ranking result—not an estimate of future-season accuracy.</p>
+          <p>A stronger next iteration would use expanding-window validation, training only on seasons available before each predicted year, then compare winner accuracy and vote-share error against simple baselines. The <a href="https://github.com/wardwalton15/nba-mvp" target="_blank" rel="noopener">refactored project repository</a> now reports MSE, MAE, and RMSE alongside the model pipeline.</p>
+        </aside>
 
         <blockquote>
           Of the six incorrect predictions, four involved seasons that are now widely considered among the most controversial MVP decisions in league history.
@@ -243,7 +251,7 @@
 
         <h2>Conclusion</h2>
         <p>
-          This project investigated the predictability of the NBA MVP award and what factors most strongly drive it. By scraping basketball-reference.com, building a gradient boosting model, and applying it to 40+ seasons of data, I found that advanced metrics — particularly OBPM and WS/48 — are the most powerful predictors, enabling the model to correctly identify the winner 86% of the time.
+          This project investigated the predictability of the NBA MVP award and what factors most strongly drive it. By scraping basketball-reference.com, building a gradient boosting model, and applying it to 40+ seasons of data, I found that advanced metrics — particularly OBPM and WS/48 in the original model — were powerful predictors. In the retrospective ranking exercise, the model placed the eventual winner first in 86% of seasons.
         </p>
         <p>
           The primary limitation is an inability to quantify media narrative. A natural next step would be scraping news coverage and conducting sentiment analysis throughout the season — tracking which players were discussed most favorably as the race developed. That layer could push accuracy higher in the close, controversial seasons the current model struggles with. But for now, the numbers tell a compelling story on their own.
@@ -259,6 +267,9 @@
           <a href="projects.html" class="btn-secondary">
             <i class="fas fa-arrow-left"></i> Back to Projects
           </a>
+          <a href="https://github.com/wardwalton15/nba-mvp" target="_blank" rel="noopener" class="btn-secondary">
+            <i class="fab fa-github" aria-hidden="true"></i> View source
+          </a>
           <a href="https://wardwalton.substack.com/p/most-valuable-predictor" target="_blank" rel="noopener" class="btn-secondary">
             Read on Substack <i class="fas fa-arrow-up-right-from-square" style="font-size: 0.55rem;"></i>
           </a>
@@ -266,6 +277,16 @@
       </footer>
 
     </main>
+
+    <footer class="site-footer">
+      <p>Ward Walton · New York City</p>
+      <nav aria-label="Social profiles">
+        <a href="https://www.linkedin.com/in/ward-walton/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/wardwalton15" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://wardwalton.substack.com/" target="_blank" rel="noopener">Substack</a>
+        <a href="https://www.tiktok.com/@thewrittenward" target="_blank" rel="noopener">TikTok</a>
+      </nav>
+    </footer>
   </div>
 
 </body>

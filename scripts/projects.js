@@ -1,12 +1,15 @@
 const projectsGrid = document.getElementById('projects-grid');
 
-fetch('data/projects.json?v=20260715')
+fetch('data/projects.json?v=20260903')
   .then(response => {
     if (!response.ok) throw new Error(`Project data returned ${response.status}`);
     return response.json();
   })
   .then(projects => {
-    const sortedProjects = [...projects].sort((a, b) => b.date.localeCompare(a.date));
+    const sortedProjects = [...projects].sort((a, b) => {
+      if (a.featured !== b.featured) return a.featured ? -1 : 1;
+      return (b.date || '').localeCompare(a.date || '');
+    });
     renderProjects(sortedProjects);
   })
   .catch(error => {
@@ -34,17 +37,23 @@ function renderProjects(projects) {
     const externalAttributes = project.type === 'external'
       ? 'target="_blank" rel="noopener"'
       : '';
+    const projectArt = project.thumb
+      ? `<img src="${project.thumb}" alt="" loading="lazy">`
+      : `<div class="card-art" aria-hidden="true"><span>${project.category}</span></div>`;
+    const projectDate = project.date
+      ? `<time class="card-date" datetime="${project.date}">${formatDate(project.date)}</time>`
+      : `<span class="card-date">${project.status || 'Ongoing'}</span>`;
 
     return `
       <a href="${project.link}"
          class="card ${project.featured ? 'featured' : ''}"
          ${externalAttributes}
          aria-label="${project.title}${project.type === 'external' ? ' (opens in a new tab)' : ''}">
-        <img src="${project.thumb}" alt="" loading="lazy">
+        ${projectArt}
         <div class="card-body">
           <div class="card-header">
             ${featuredBadge}
-            <time class="card-date" datetime="${project.date}">${formatDate(project.date)}</time>
+            ${projectDate}
           </div>
           <h2>${project.title} ${externalIcon}</h2>
           <p>${project.description}</p>

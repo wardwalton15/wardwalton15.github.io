@@ -1,14 +1,58 @@
 [
   {
-    "title": "Most Valuable Predictor",
-    "description": "Predicting NBA MVP winners using machine learning. An analysis of 40+ seasons of basketball data.",
-    "thumb": "images/project1-thumb.jpg",
-    "link": "https://wardwalton.substack.com/p/most-valuable-predictor",
-    "type": "external",
-    "date": "2024-04-15",
-    "tags": ["NBA", "Machine Learning", "Sports Analytics"],
-    "category": "Sports Analytics",
-    "featured": true,
-    "tools": ["Python", "Machine Learning"]
+    "title": "You can't just read your way to a better future",
+    "description": "From existential dread to political imagination.",
+    "link": "https://wardwalton.substack.com/p/you-cant-just-read-your-way-to-a",
+    "date": "2026-07-15",
+    "category": "Ideas"
+  },
+  {
+    "title": "Go New York Go New York Go (To the Hoop)",
+    "description": "The on-court geography of the Knicks' historic playoff run.",
+    "link": "https://wardwalton.substack.com/p/go-new-york-go-new-york-go-to-the",
+    "date": "2026-05-30",
+    "category": "Basketball"
+  },
+  {
+    "title": "I'm Building The AI That Will Replace Me",
+    "description": "A personal reflection on evaluation work, automation, and labor.",
+    "link": "https://wardwalton.substack.com/p/im-building-the-ai-that-will-replace",
+    "date": "2026-04-21",
+    "category": "AI & Work"
+  },
+  {
+    "title": "The Ascension of Javokhir Sindarov",
+    "description": "A look at the 2026 FIDE Candidates Tournament through five rounds.",
+    "link": "https://wardwalton.substack.com/p/the-ascension-of-javokhir-sindarov",
+    "date": "2026-04-03",
+    "category": "Chess"
+  },
+  {
+    "title": "Following the Money",
+    "description": "Spoiler alert: it's not going to you or me.",
+    "link": "https://wardwalton.substack.com/p/following-the-money",
+    "date": "2026-03-27",
+    "category": "Economics"
+  },
+  {
+    "title": "If I'm Reading, Be Reading",
+    "description": "On cultivating attention in a scattered world.",
+    "link": "https://wardwalton.substack.com/p/if-im-reading-be-reading",
+    "date": "2026-01-12",
+    "category": "Attention"
+  },
+  {
+    "title": "We Did Not Choose to Be Cockroaches",
+    "description": "Kafka, obligation, and the quiet guilt of existing.",
+    "link": "https://wardwalton.substack.com/p/we-did-not-choose-to-be-cockroaches",
+    "date": "2025-12-30",
+    "category": "Literature"
+  },
+  {
+    "title": "The Eight Offensive Styles That Define College Basketball",
+    "description": "Using clustering and public data to map how the best teams actually score.",
+    "link": "https://wardwalton.substack.com/p/the-eight-offensive-styles-that-define",
+    "date": "2025-12-23",
+    "category": "Basketball"
   }
 ]

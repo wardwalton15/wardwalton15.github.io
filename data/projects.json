@@ -9,7 +9,8 @@
     "tags": ["Data Visualization", "Python", "Reading", "Geography"],
     "category": "Data Visualization",
     "featured": false,
-    "tools": ["Python", "Folium", "Leaflet"]
+    "tools": ["Python", "Folium", "Leaflet"],
+    "source": "https://github.com/wardwalton15/book-map"
   },
   {
     "title": "NBA MVP Predictor",
@@ -21,6 +22,41 @@
     "tags": ["Machine Learning", "Python", "Sports Analytics", "NBA"],
     "category": "Data Science",
     "featured": true,
-    "tools": ["Python", "Pandas", "Scikit-learn", "Beautiful Soup"]
+    "tools": ["Python", "Pandas", "Scikit-learn", "Beautiful Soup"],
+    "source": "https://github.com/wardwalton15/nba-mvp"
+  },
+  {
+    "title": "College Basketball Ratings",
+    "description": "Opponent-adjusted ratings for 360+ Division I teams, built around the Four Factors and delivered through a sortable full-stack application.",
+    "link": "https://github.com/wardwalton15/college-basketball-ratings",
+    "type": "external",
+    "date": "2026-02-04",
+    "tags": ["Sports Analytics", "Full Stack", "NCAA"],
+    "category": "Sports Analytics",
+    "featured": false,
+    "tools": ["Python", "React", "Flask", "PostgreSQL"]
+  },
+  {
+    "title": "Kafka's The Trial: NLP Analysis",
+    "description": "An NLP pipeline exploring language, themes, and textual patterns in Franz Kafka's The Trial.",
+    "link": "https://github.com/wardwalton15/kafka_trial_analysis",
+    "type": "external",
+    "date": "2025-08-21",
+    "tags": ["NLP", "Python", "Literature"],
+    "category": "Creative Computation",
+    "featured": false,
+    "tools": ["Python", "Jupyter", "NLP"]
+  },
+  {
+    "title": "LaxRatings",
+    "description": "Opponent-adjusted offensive and defensive efficiency ratings for NCAA Division I men's lacrosse.",
+    "link": "https://laxratings.vercel.app/",
+    "type": "external",
+    "date": null,
+    "status": "Live",
+    "tags": ["Sports Analytics", "Lacrosse", "Ratings"],
+    "category": "Sports Analytics",
+    "featured": false,
+    "tools": ["Efficiency Ratings", "Opponent Adjustment"]
   }
 ]
