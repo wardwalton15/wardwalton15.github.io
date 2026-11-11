@@ -1,57 +1,74 @@
 [
   {
-    "title": "You can't just read your way to a better future",
+    "title": "High Ground",
+    "description": "Why northern New York didn’t get swept into the blue wave.",
+    "link": "https://wardwalton.substack.com/p/high-ground",
+    "date": "2026-11-06",
+    "category": "Politics",
+    "kind": "analysis"
+  },
+  {
+    "title": "You can’t just read your way to a better future",
     "description": "From existential dread to political imagination.",
     "link": "https://wardwalton.substack.com/p/you-cant-just-read-your-way-to-a",
     "date": "2026-07-15",
-    "category": "Ideas"
+    "category": "Ideas",
+    "kind": "essay"
   },
   {
     "title": "Go New York Go New York Go (To the Hoop)",
-    "description": "The on-court geography of the Knicks' historic playoff run.",
+    "description": "The on-court geography of the Knicks’ historic playoff run.",
     "link": "https://wardwalton.substack.com/p/go-new-york-go-new-york-go-to-the",
     "date": "2026-05-30",
-    "category": "Basketball"
+    "category": "Basketball",
+    "kind": "analysis"
   },
   {
-    "title": "I'm Building The AI That Will Replace Me",
+    "title": "I’m Building The AI That Will Replace Me",
+    "description": "Searching for stability in tumultuous times.",
     "link": "https://wardwalton.substack.com/p/im-building-the-ai-that-will-replace",
     "date": "2026-04-21",
-    "category": "AI & Work"
+    "category": "AI & Work",
+    "kind": "essay"
   },
   {
     "title": "The Ascension of Javokhir Sindarov",
     "description": "A look at the 2026 FIDE Candidates Tournament through five rounds.",
     "link": "https://wardwalton.substack.com/p/the-ascension-of-javokhir-sindarov",
     "date": "2026-04-03",
-    "category": "Chess"
+    "category": "Chess",
+    "kind": "analysis"
   },
   {
     "title": "Following the Money",
-    "description": "Spoiler alert: it's not going to you or me.",
+    "description": "Spoiler alert: it’s not going to you or me.",
     "link": "https://wardwalton.substack.com/p/following-the-money",
     "date": "2026-03-27",
-    "category": "Economics"
+    "category": "Economics",
+    "kind": "essay"
   },
   {
-    "title": "If I'm Reading, Be Reading",
+    "title": "If I’m Reading, Be Reading",
     "description": "On cultivating attention in a scattered world.",
     "link": "https://wardwalton.substack.com/p/if-im-reading-be-reading",
     "date": "2026-01-12",
-    "category": "Attention"
+    "category": "Attention",
+    "kind": "essay"
   },
   {
     "title": "We Did Not Choose to Be Cockroaches",
     "description": "Kafka, obligation, and the quiet guilt of existing.",
     "link": "https://wardwalton.substack.com/p/we-did-not-choose-to-be-cockroaches",
     "date": "2025-12-30",
-    "category": "Literature"
+    "category": "Literature",
+    "kind": "essay"
   },
   {
     "title": "The Eight Offensive Styles That Define College Basketball",
     "description": "Using clustering and public data to map how the best teams actually score.",
     "link": "https://wardwalton.substack.com/p/the-eight-offensive-styles-that-define",
     "date": "2025-12-23",
-    "category": "Basketball"
+    "category": "Basketball",
+    "kind": "analysis"
   }
 ]

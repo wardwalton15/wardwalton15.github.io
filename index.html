@@ -41,7 +41,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=20260903">
+  <link rel="stylesheet" href="style.css?v=20261111">
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -166,25 +166,8 @@
           <span class="label" id="selected-writing-title">Selected Writing</span>
           <a href="writing.html" class="text-link">All essays →</a>
         </div>
-        <div class="writing-preview-grid">
-          <a href="https://wardwalton.substack.com/p/you-cant-just-read-your-way-to-a" target="_blank" rel="noopener" class="writing-preview">
-            <div class="writing-preview-meta"><span>Ideas</span><time datetime="2026-07-15">Jul 2026</time></div>
-            <h2>You can’t just read your way to a better future</h2>
-            <p>From existential dread to political imagination.</p>
-            <span class="work-preview-cta">Read essay ↗</span>
-          </a>
-          <a href="https://wardwalton.substack.com/p/go-new-york-go-new-york-go-to-the" target="_blank" rel="noopener" class="writing-preview">
-            <div class="writing-preview-meta"><span>Basketball</span><time datetime="2026-05-30">May 2026</time></div>
-            <h2>Go New York Go New York Go (To the Hoop)</h2>
-            <p>The on-court geography of the Knicks’ historic playoff run.</p>
-            <span class="work-preview-cta">Read analysis ↗</span>
-          </a>
-          <a href="https://wardwalton.substack.com/p/im-building-the-ai-that-will-replace" target="_blank" rel="noopener" class="writing-preview">
-            <div class="writing-preview-meta"><span>AI &amp; Work</span><time datetime="2026-04-21">Apr 2026</time></div>
-            <h2>I’m Building The AI That Will Replace Me</h2>
-            <span class="work-preview-cta">Read essay ↗</span>
-          </a>
-        </div>
+        <div id="writing-grid" class="writing-preview-grid" data-limit="3" aria-live="polite"></div>
+        <noscript><p class="page-subtitle">Essays are published on <a href="https://wardwalton.substack.com/">The Written Ward on Substack</a>.</p></noscript>
       </section>
 
       <hr class="rule rule--sm">
@@ -230,5 +213,6 @@
     </footer>
   </div>
 
+  <script src="scripts/writing.js?v=20261111"></script>
 </body>
 </html>

@@ -597,6 +597,8 @@ button.pill.active {
 
 .writing-preview .work-preview-cta { margin-top: auto; }
 
+.writing-preview-grid:empty { min-height: 205px; }
+
 .writing-page-grid { grid-template-columns: repeat(2, 1fr); }
 
 .writing-subscribe {
