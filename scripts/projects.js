@@ -1,6 +1,6 @@
 const projectsGrid = document.getElementById('projects-grid');
 
-fetch('data/projects.json?v=20260903')
+fetch('data/projects.json?v=20261111')
   .then(response => {
     if (!response.ok) throw new Error(`Project data returned ${response.status}`);
     return response.json();

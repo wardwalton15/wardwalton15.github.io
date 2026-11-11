@@ -7,7 +7,7 @@
   <!-- Primary Meta Tags -->
   <title>NBA MVP Predictor – Ward Walton | Machine Learning Project</title>
   <meta name="title" content="NBA MVP Predictor – Ward Walton | Machine Learning Project" />
-  <meta name="description" content="A machine learning approach to predict the NBA MVP award using Python, gradient boosting, and advanced basketball statistics. Features analysis of 40+ seasons of data, key predictors, and 2023-24 predictions." />
+  <meta name="description" content="A machine learning approach to predict the NBA MVP award using Python, gradient boosting, and advanced basketball statistics. Features 40+ seasons of data, key predictors, and a live Streamlit dashboard." />
   <meta name="keywords" content="NBA MVP, machine learning, Python, gradient boosting, sports analytics, basketball statistics, Nikola Jokic, data science project" />
   <meta name="author" content="Ward Walton" />
   <meta name="robots" content="index, follow" />
@@ -44,7 +44,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=20261111">
+  <link rel="stylesheet" href="style.css?v=20261111b">
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -68,7 +68,7 @@
       }
     },
     "datePublished": "2025-08-01",
-    "dateModified": "2026-09-03",
+    "dateModified": "2026-11-11",
     "keywords": "NBA, MVP, machine learning, Python, gradient boosting, basketball analytics, sports analytics",
     "articleSection": "Data Science",
     "inLanguage": "en-US"
@@ -118,7 +118,7 @@
         <div class="article-meta">
           <span>Data Science</span>
           <span class="separator">·</span>
-          <span>Updated Sep 2026</span>
+          <span>Updated Nov 2026</span>
           <span class="separator">·</span>
           <span>Original model Apr 2024</span>
         </div>
@@ -165,6 +165,26 @@
           <span class="stat-value">37 of 43 historical winners ranked first (86%)</span>
         </div>
       </div>
+
+      <!-- Live Dashboard -->
+      <section class="live-dashboard fade-in fade-in--delay-2" aria-labelledby="live-dashboard-title">
+        <div class="live-dashboard-head">
+          <div>
+            <span class="label" id="live-dashboard-title"><span class="live-dot" aria-hidden="true"></span>Live Dashboard</span>
+            <p>The model now runs as an interactive Streamlit app. Explore this season&rsquo;s predicted MVP race, player by player.</p>
+          </div>
+          <a href="https://nba-mvp-prediction.streamlit.app/" target="_blank" rel="noopener" class="btn-primary">
+            Open dashboard <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="live-dashboard-frame">
+          <iframe src="https://nba-mvp-prediction.streamlit.app/?embed=true"
+                  title="NBA MVP Prediction dashboard (Streamlit)"
+                  loading="lazy"
+                  allow="clipboard-write"></iframe>
+        </div>
+        <p class="live-dashboard-note">Hosted on Streamlit Community Cloud. If the app has been idle it may take a moment to wake up; <a href="https://nba-mvp-prediction.streamlit.app/" target="_blank" rel="noopener">open it in a new tab</a> if the embed doesn&rsquo;t load.</p>
+      </section>
 
       <hr class="rule rule--sm">
 
@@ -266,6 +286,9 @@
         <div class="article-navigation">
           <a href="projects.html" class="btn-secondary">
             <i class="fas fa-arrow-left"></i> Back to Projects
+          </a>
+          <a href="https://nba-mvp-prediction.streamlit.app/" target="_blank" rel="noopener" class="btn-secondary">
+            Live dashboard <i class="fas fa-arrow-up-right-from-square" style="font-size: 0.55rem;"></i>
           </a>
           <a href="https://github.com/wardwalton15/nba-mvp" target="_blank" rel="noopener" class="btn-secondary">
             <i class="fab fa-github" aria-hidden="true"></i> View source

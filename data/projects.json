@@ -14,7 +14,7 @@
   },
   {
     "title": "NBA MVP Predictor",
-    "description": "A machine learning approach to predict the NBA's most prestigious individual award using gradient boosting and 40+ seasons of data.",
+    "description": "A machine learning approach to predict the NBA's most prestigious individual award using gradient boosting and 40+ seasons of data, with a live Streamlit dashboard.",
     "thumb": "images/project1-thumb.jpg",
     "link": "project1.html",
     "type": "internal",
@@ -22,7 +22,7 @@
     "tags": ["Machine Learning", "Python", "Sports Analytics", "NBA"],
     "category": "Data Science",
     "featured": true,
-    "tools": ["Python", "Pandas", "Scikit-learn", "Beautiful Soup"],
+    "tools": ["Python", "Pandas", "Scikit-learn", "Streamlit"],
     "source": "https://github.com/wardwalton15/nba-mvp"
   },
   {

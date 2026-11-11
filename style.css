@@ -1444,3 +1444,72 @@ button.pill.active {
   body > header nav { width: 100%; justify-content: space-between; gap: var(--sp-sm); }
   body > header { padding: 0 var(--sp-md); }
 }
+
+/* ── LIVE DASHBOARD EMBED ─────────────────────────────────── */
+.live-dashboard {
+  margin: var(--sp-xl) 0;
+  padding: var(--sp-lg);
+  border: 1px solid rgba(201, 168, 76, 0.38);
+  background: var(--cream);
+}
+
+.live-dashboard-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--sp-lg);
+  margin-bottom: var(--sp-md);
+}
+
+.live-dashboard-head .label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-sm);
+  margin-bottom: var(--sp-xs);
+}
+
+.live-dashboard-head p {
+  font-size: var(--text-sm);
+  color: var(--slate);
+  margin: 0;
+}
+
+.live-dashboard-head .btn-primary { flex-shrink: 0; }
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--sienna);
+  box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.15);
+}
+
+.live-dashboard-frame {
+  position: relative;
+  border: 1px solid var(--border);
+  background: #fff;
+  height: 720px;
+}
+
+.live-dashboard-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.live-dashboard-note {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--muted);
+  margin: var(--sp-sm) 0 0;
+}
+
+.live-dashboard-note a { color: var(--sienna); }
+
+@media (max-width: 640px) {
+  .live-dashboard { padding: var(--sp-md); }
+  .live-dashboard-head { flex-direction: column; align-items: flex-start; }
+  .live-dashboard-frame { height: 560px; }
+}
